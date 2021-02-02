@@ -66,7 +66,7 @@ Ennek a metódusnak nincs paramétere, mivel csak a kattintás ténye a lényege
 gomb osztályát, amit külső változóból kapok, beszúrtam gyermek komponensként az 
 app-icon komponenst és átadtam neki az icon változóban kapott class nevet, 
 megjelenítettem a gomb tartalmában a kapott szöveget. Ha nem akarok szöveget, 
-akkor üres string -et adok át az app-acion-button komponensnek.
+akkor üres string -et adok át az app-action-button komponensnek.
 
 ## 3. ActionButtonGroup
 ![ActionButtonGroupComponent](src/assets/diagrams/actio-button-group-component.JPG)
