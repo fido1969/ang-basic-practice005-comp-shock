@@ -46,7 +46,7 @@ komponensbe. A `<boolean>` azt jelenti, hogy az adat, ami az eseményben
 
 - Metódus: 
 ```typescript
-onUserCliced(): void {
+onUserClicked(): void {
   this.clicked.emit(true);
 }
 ```
@@ -57,7 +57,7 @@ Ennek a metódusnak nincs paramétere, mivel csak a kattintás ténye a lényege
 
 - Nézet:  
 ```html
-<button (click)="onUserCliced()" class="btn" [class]="btnClass">
+<button (click)="onUserClicked()" class="btn" [class]="btnClass">
   <app-icon [icon]="icon"></app-icon>
   {{ text }}
 </button>
@@ -131,9 +131,9 @@ form elemekhez használják, mint az input, select vagy textarea.
 gombokra való kattintást.
 - Létrehozás: data-row
 - Bejövő adat: `@var dataRow {User}, @default new User()`
-- Kimenő esemény: `@var selectClick {EventEmitter<boolean>}`
-- Kimenő esemény: `@var updateClick {EventEmitter<boolean>}`
-- Kimenő esemény: `@var deleteClick {EventEmitter<boolean>}`
+- Kimenő esemény: `@var selectClick {EventEmitter<User>}`
+- Kimenő esemény: `@var updateClick {EventEmitter<User>}`
+- Kimenő esemény: `@var deleteClick {EventEmitter<User>}`
 - Metódus: `@method onSelectClicked {void}, selectClick eseményt hívja a dataRow -val`
 - Metódus: `@method onUpdateClicked {void}, updateClick eseményt hívja a dataRow -val`
 - Metódus: `@method onDeleteClicked {void}, deleteClick eseményt hívja a dataRow -val`
@@ -156,9 +156,9 @@ ismétli meg, ahány eleme van a kapott tömbnek. Lekezeli az akciógombok
 kattintásait. Megjeleníti a kiválasztott adatsorhoz tartozó user-detail kártyát.
 - Létrehozás: data-list
 - Bejövő adat: `@var dataList {User[]}, @default []`
-- Kimenő esemény: `@var selectClick {EventEmitter<boolean>}`
-- Kimenő esemény: `@var updateClick {EventEmitter<boolean>}`
-- Kimenő esemény: `@var deleteClick {EventEmitter<boolean>}`
+- Kimenő esemény: `@var selectClick {EventEmitter<User>}`
+- Kimenő esemény: `@var updateClick {EventEmitter<User>}`
+- Kimenő esemény: `@var deleteClick {EventEmitter<User>}`
 - Metódus: `@method onSelectClicked {void}, selectClick eseményt hívja a dataRow -val`
 - Metódus: `@method onUpdateClicked {void}, updateClick eseményt hívja a dataRow -val`
 - Metódus: `@method onDeleteClicked {void}, deleteClick eseményt hívja a dataRow -val`
